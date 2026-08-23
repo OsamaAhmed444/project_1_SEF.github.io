@@ -4,65 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>modern car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden bg-white">
     <!----------------------- HEADER ------------------------>
-    <div class="header-section">
-      <div class="header-search">
-        <i class="fa-solid fa-house"></i>
-        <div class="header-input">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" class="search-input" />
+    <nav class="header-section navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid px-3 px-md-4">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <form class="d-flex ms-lg-3" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+          </form>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Prices</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cars History</a></li>
+                <li><a class="dropdown-item" href="#">Colors</a></li>
+                <li><a class="dropdown-item" href="#">Types</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          </ul>
         </div>
-        <!-- header-input -->
       </div>
-      <!-- header-search -->
-      <div class="header-links">
-        <ul class="list1">
-          <li class="li-he"><a href="">home</a></li>
-          <li class="li-he"><a href="">about</a></li>
-          <li class="li-he"><a href="">portfolio</a></li>
-          <li class="li-he"><a href="">services</a></li>
-          <li class="li-he"><a href="">prices</a></li>
-          <li class="li-he"><a href="">team</a></li>
-          <li class="li-he li-he3">
-            <a href="">blog</a>
-            <ul class="drop-list">
-              <li class="li-he li-blog"><a href="">cars history</a></li>
-              <li class="li-he li-blog"><a href="">colors</a></li>
-              <li class="li-he li-blog"><a href="">types</a></li>
-            </ul>
-          </li>
-          <li class="li-he"><a href="">contact us</a></li>
-        </ul>
-      </div>
-      <!-- header-links -->
-    </div>
+    </nav>
     <!-- header-section -->
     <!----------------------- /HEADER ------------------------>
 
     <!----------------------- img-section ------------------------>
-    <div class="img-section">
+    <div class="img-section min-vh-100">
       <div class="img-ovarly">
         <div class="img-text">
-          <h1 class="img-title">we are creative agency</h1>
+          <h1 class="img-title fw-bold">we are creative agency</h1>
           <p class="img-para">
             Step into a world where every shoe is a statement. Discover designs
             that blend bold artistry with timeless elegance, crafted for the
             unforgettable journe ney ahead.
           </p>
-          <button class="btn btn1">learn more</button>
-          <button class="btn btn2">get started</button>
+          <button class="btn btn1 rounded-3 bg-white px-4 py-3 fs-5 fw-semibold">learn more</button>
+          <button class="btn btn2 rounded-3 bg-dark px-4 py-3 fs-5 fw-semibold text-white">get started</button>
         </div><!-- img-text -->
       </div><!-- img-ovarly -->
     </div><!-- img-section -->
     <!----------------------- /img-section ------------------------>
 
    <!----------------------- welcome-section ------------------------>
-   <div class="welcome">
-    <h2 class="title">Welcome To My Website</h2>
+  <div class="welcome py-5 py-md-5">
+   <h2 class="title fw-bold">Welcome To My Website</h2>
     <div class="underline"></div><!-- underline -->
     <div class="welcome-container">
     <div class="welcome-info">
@@ -88,7 +90,7 @@
     <!----------------------- /welcome-section ------------------------>
 
     <!----------------------- feature-section ------------------------>
-   <div class="feature">
+  <div class="feature py-5 py-md-5">
    <h2 class="title feature-title">featured works</h2>
     <div class="underline"></div><!-- underline -->
     <div class="feature-container">
@@ -145,7 +147,7 @@
   <!----------------------- /feature-section ------------------------>
 
   <!----------------------- offer-section ------------------------>
-  <div class="offer">
+  <div class="offer py-5 py-md-5">
     <h2 class="title feature-title">what we offer</h2>
     <div class="underline"></div><!-- underline -->
     <div class="offer-container">
@@ -195,7 +197,7 @@
   </div><!-- offer -->
   <!----------------------- /offer-section ------------------------>
   <!----------------------- choose-section ------------------------>
-  <div class="choose-container">
+  <div class="choose-container py-5 py-md-5">
     <div class="choose-left">
      <h2 class="choose-title">why choose us</h2>
      <div class="underline2"></div><!-- underline2 -->
@@ -246,7 +248,7 @@
    </div><!-- achivment -->
   <!----------------------- /achivment------------------------>
   <!----------------------- Pricing section------------------------>
-  <div class="pricing-section">
+  <div class="pricing-section py-5 py-md-5">
    <h2 class="title">Pricing Table</h2>
    <div class="underline"></div><!-- underline -->
     <div class="pricing-container">
@@ -311,7 +313,7 @@
   </div><!-- portfolio-section -->
   <!----------------------- /portfolio-section------------------------>
   <!-------------------------- team-section ---------------------------->
-  <div class="team-section">
+  <div class="team-section py-5 py-md-5">
    <h2 class="title">Our Team</h2>
    <div class="underline"></div><!-- underline -->
   <div class="team-container">
@@ -361,10 +363,10 @@
   </div><!-- team-section -->
     <!-------------------------- /team-section ---------------------------->
     <!-------------------------- news-section ---------------------------->
-     <div class="news-section">
+    <div class="news-section py-5 py-md-5">
    <h2 class="title">Recent News</h2>
    <div class="underline"></div><!-- underline -->
-   <div class="news-container">
+  <div class="news-container">
     <div class="news-info">
       <div class="news-img">
       <img src="img/13da26d9-15bf-4cd7-b084-a9eaf814e32d-1024x1024.webp" alt="" height="300px">
@@ -402,7 +404,7 @@
      </div><!-- news-section -->
  <!-------------------------- /news-section ---------------------------->
 <!-------------------------- footer ---------------------------->
-<div class="footer">
+<div class="footer px-3 py-5 text-center">
 <img src="img/83-834011_lamborghini-logo-png-lamborghini-logo-black-and-white-removebg-preview.png" alt="company" class="footer-img" width="250px" height="250px">
 <div class="footer-icons">
  <i class="fa-brands fa-facebook-f footer-icon"></i>
@@ -414,6 +416,11 @@
 </div><!-- footer-icons -->
 <p class="footer-end">&copy; 2021 . all right reserved by colorlib</p>
 </div><!-- footer -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+<!--car side icon <i class="fa-solid fa-car-side"></i> -->
+
   </body>
 </html>
 <!--car side icon <i class="fa-solid fa-car-side"></i> -->
