@@ -5,7 +5,8 @@
 }
  body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    height: 6000px;
+     min-height: 100vh;
+     overflow-x: hidden;
  }
 
  /* ////////////////////////// header-section ////////////////////////// */
@@ -466,7 +467,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: white;
     margin-bottom: 150px;
 }
@@ -785,6 +786,420 @@ margin-bottom: 10px;
 }
 .footer-end{
     text-align: center;
+    color: rgba(13, 27, 42, 0.6);
+    text-transform: uppercase; 
+    padding-bottom: 15px; 
+}
+
+/* ////////////////////////// responsive layout ////////////////////////// */
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .header-section {
+        height: auto;
+        min-height: 55px;
+        padding: 10px 20px;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .header-links {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .list1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
+    }
+
+    .li-he {
+        margin-right: 0;
+    }
+
+    .img-title {
+        font-size: clamp(36px, 8vw, 63px);
+    }
+
+    .img-text {
+        width: min(90%, 700px);
+    }
+
+    .feature-container,
+    .welcome-container,
+    .offer,
+    .choose-container,
+    .fixed-container {
+        width: 90%;
+    }
+
+    .feature-container {
+        height: auto;
+        padding: 30px 0 60px;
+    }
+
+    .feature-imgs {
+        width: 46%;
+        margin: 0 2% 4%;
+    }
+
+    .welcome-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        height: auto;
+        padding-left: 0;
+        margin-bottom: 80px;
+    }
+
+    .welcome-info,
+    .offer-info {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .offer {
+        height: auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .choose-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        padding-bottom: 60px;
+    }
+
+    .choose-left {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        float: none;
+    }
+
+    .choose-title {
+        font-size: 34px;
+    }
+
+    .choose-list {
+        width: 100%;
+    }
+
+    .choose-right {
+        text-align: center;
+    }
+
+    .choose-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .achivment-info {
+        width: 45%;
+        margin: 0 2.5%;
+        padding-top: 80px;
+    }
+
+    .pricing-section {
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .pricing-container {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .pricing-info {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .portfolio-info {
+        width: 45%;
+        margin: 0 2.5%;
+        padding-top: 100px;
+    }
+
+    .team-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+
+    .team-card {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .news-section {
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .news-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .news-info {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .underline {
+        margin-bottom: 45px;
+    }
+
+    .img-section,
+    .img-ovarly {
+        min-height: 650px;
+        height: 100svh;
+    }
+
+    .img-title {
+        font-size: 38px;
+    }
+
+    .img-para {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 19px;
+    }
+
+    .feature-imgs,
+    .welcome-container,
+    .offer,
+    .choose-container,
+    .pricing-container,
+    .team-container,
+    .news-container {
+        display: block;
+    }
+
+    .offer {
+        padding-top: 80px !important;
+    }
+
+    .feature-imgs {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .welcome-info,
+    .offer-info,
+    .pricing-info,
+    .team-card,
+    .news-info {
+        margin-bottom: 24px;
+    }
+
+    .choose-container {
+        padding-bottom: 40px;
+    }
+
+    .choose-title {
+        font-size: 30px;
+    }
+
+    .choose-list {
+        line-height: 30px;
+    }
+
+    .hero-fixed {
+        height: auto;
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+
+    .hero-fixed .fixed-overlay {
+        height: auto;
+        min-height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .hero-fixed .fixed-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .achivment-info,
+    .portfolio-info {
+        width: 100%;
+        margin: 0;
+        padding-top: 60px;
+        float: none;
+    }
+
+    .portfolio-info {
+        min-height: 180px;
+    }
+
+    .team-img {
+        height: auto;
+    }
+
+    .news-info {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .footer-img {
+        width: min(70%, 250px);
+        height: auto;
+    }
+
+    .footer-icon {
+        margin: 4px;
+    }
+}
+
+.offer {
+    height: auto;
+}
+
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.offer-info {
+    width: 100%;
+    margin: 0;
+    float: none;
+    height: auto;
+    min-height: 200px;
+}
+
+@media (max-width: 480px) {
+    .offer-container {
+        display: block;
+    }
+
+    .offer-info {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 901px) {
+    .offer-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .offer {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .offer-container {
+        width: 100%;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .offer {
+        display: block;
+    }
+
+    .offer-info {
+        min-height: 220px;
+    }
+
+    .offer-icon {
+        padding: 15px 10px;
+        font-size: 24px;
+    }
+
+    .offer-text {
+        padding-top: 15px;
+    }
+
+    .offer-title {
+        margin-bottom: 18px;
+        font-size: 22px;
+    }
+
+    .offer-para {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .offer {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .offer-container {
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .offer-info {
+        min-height: 220px;
+    }
+
+    .offer-icon {
+        padding: 15px 10px;
+        font-size: 24px;
+    }
+
+    .offer-title {
+        margin-bottom: 18px;
+        font-size: 22px;
+    }
+
+    .offer-para {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
     color: rgba(13, 27, 42, 0.6);
     text-transform: uppercase; 
     padding-bottom: 15px; 
